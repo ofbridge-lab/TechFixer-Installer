@@ -36,6 +36,24 @@
       "sourceType": null,
       "_note": "L'asset de RELEASE est compresse (Fido.ps1.lzma) et imposerait un decodeur LZMA. Le meme fichier est disponible NON COMPRESSE au tag correspondant sur raw.githubusercontent. Fichier utilise TEL QUEL, jamais modifie (GPLv3 : invocation en sous-processus = simple agregation)."
     },
+    "sevenzip": {
+      "label": "7-Zip (7zr)",
+      "kind": "tool",
+      "latest": "26.02",
+      "resolve": {
+        "type": "scrape",
+        "url": "https://www.7-zip.org/download.html",
+        "versionRx": "Download 7-Zip (\\d+\\.\\d+)"
+      },
+      "dl": "https://www.7-zip.org/a/7zr.exe",
+      "dlType": "exe",
+      "extract": { "mode": "direct" },
+      "localPath": "Ressource\\7zr.exe",
+      "weight": null,
+      "size": 602112,
+      "sourceType": null,
+      "_note": "Decodeur 7-Zip autonome (un seul exe, aucune dependance, DOMAINE PUBLIC) servant a extraire le snapshot Techfixer*.7z sur la cle. Choisi plutot que SharpCompress : l'archive fait ~11,3 Go en solide, ou la bibliotheque manageee est nettement plus lente et gourmande. Invoque en sous-processus, comme Ventoy2Disk.exe et Fido.ps1. ATTENTION : l'URL /a/7zr.exe sert TOUJOURS la derniere version, sans numero dans le chemin — 'latest' peut donc etre en retard sur le binaire reellement telecharge tant que le bot n'a pas rescrape la page."
+    },
     "vhdboot": {
       "label": "Plugin VHD Boot",
       "kind": "keyResource",
