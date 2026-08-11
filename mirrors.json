@@ -1,0 +1,16 @@
+{
+  "schema": "ofbridge.techfixer.mirrors/1",
+  "updated": "2026-08-11",
+  "_note": "Systeme de miroirs (cf. prompt initial, section \"Systeme de miroirs\"). Interroge a la demande (preparation de cle), pas a chaque lancement -- meme mecanique de repli que manifest.json (Manifest/ManifestFetcher.cs) : distant -> derniere copie recuperee avec succes -> copie seed embarquee. Hebergement prevu : raw.githubusercontent.com, repo ofbridge-lab/TechFixer-Installer (confirme par Ludo le 2026-08-11).",
+  "items": {
+    "techfixer-key-snapshot": {
+      "label": "TechFixer — snapshot complet de clé",
+      "version": "2608",
+      "mirror1": "https://kdrive.infomaniak.com/app/share/253365/9ceaa1f1-9f4a-45e2-89c4-cdd2c780a2bf",
+      "mirror2": null,
+      "hash": null,
+      "size": null,
+      "_note": "Mirror 2 (Archive.org, https://archive.org/details/techfixer-2608.7z) en cours d'upload par Ludo au 2026-08-11 -- laisse a null tant que l'upload n'est pas termine et l'URL confirmee stable (comportement voulu par le prompt initial : grise/desactive dans l'UI tant que null). Le lien kDrive de mirror1 est un lien de partage : a re-interroger dynamiquement si Infomaniak le fait expirer/changer."
+    }
+  }
+}
