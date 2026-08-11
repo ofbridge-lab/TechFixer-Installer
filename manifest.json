@@ -1,0 +1,70 @@
+{
+  "schema": "ofbridge.techfixer.installer.manifest/1",
+  "updated": "2026-08-11",
+  "_note": "Manifeste de ressources TechFixerInstaller (Ventoy, Fido, plugins VHD/WIM Boot, Memtest86+). Versions ci-dessous verifiees manuellement le 2026-08-11 (GitHub Releases API + memtest.org) en attendant que ce fichier soit publie sur GitHub (org ofbridge-lab) et resolu automatiquement par manifest-automation/Update-ResourceManifest.ps1 (delegue au bot Update-Manifest.ps1 de TechFixerHub.NET, memes types de resolveur : github/template/...). D'ici la publication, ce fichier bundlé fait office de copie locale de secours (meme mecanique que mirrors.json, cf. prompt initial).",
+  "resources": {
+    "ventoy": {
+      "label": "Ventoy",
+      "kind": "tool",
+      "latest": "1.1.17",
+      "resolve": { "type": "github", "repo": "ventoy/Ventoy", "assetRx": "-windows\\.zip$" },
+      "dlType": "zip",
+      "localPath": "Ressource\\Ventoy2Disk.exe",
+      "weight": null,
+      "size": null,
+      "sourceType": null
+    },
+    "fido": {
+      "label": "Fido",
+      "kind": "tool",
+      "latest": "1.70",
+      "resolve": { "type": "github", "repo": "pbatard/Fido", "assetRx": "Fido\\.ps1\\.lzma$" },
+      "dlType": "lzma",
+      "localPath": "Ressource\\Fido.ps1",
+      "weight": null,
+      "size": null,
+      "sourceType": null,
+      "_note": "L'asset de release est compresse (.lzma, pas un .ps1 brut) : decompression a cabler cote client au moment de l'integration Fido (etape 5)."
+    },
+    "vhdboot": {
+      "label": "Plugin VHD Boot",
+      "kind": "keyResource",
+      "latest": "3.0",
+      "resolve": { "type": "github", "repo": "ventoy/vhdiso", "assetRx": "ventoy_vhdboot\\.zip$" },
+      "dlType": "zip",
+      "localPath": "Source\\ventoy\\ventoy_vhdboot.img",
+      "weight": 3,
+      "size": null,
+      "sourceType": null,
+      "_note": "L'asset est un zip contenant ventoy_vhdboot.img (extraction requise, contrairement a wimboot)."
+    },
+    "wimboot": {
+      "label": "Plugin WIM Boot",
+      "kind": "keyResource",
+      "latest": "1.0",
+      "resolve": { "type": "github", "repo": "ventoy/wimiso", "assetRx": "ventoy_wimboot\\.img$" },
+      "dlType": "img",
+      "localPath": "Source\\ventoy\\ventoy_wimboot.img",
+      "weight": 3,
+      "size": null,
+      "sourceType": null
+    },
+    "memtest86plus": {
+      "label": "Memtest86+",
+      "kind": "keyResource",
+      "latest": "8.10",
+      "resolve": {
+        "type": "template",
+        "versionUrl": "https://github.com/memtest86plus/memtest86plus/releases/latest",
+        "versionRx": "tag/v(\\d+\\.\\d+)",
+        "urlTemplate": "https://www.memtest.org/download/{version}/mt86plus_{version}_x86_64.iso.zip"
+      },
+      "dlType": "isozip",
+      "localPathTemplate": "Source\\iso\\Test_de_RAM\\memtest86plus_{version}.iso",
+      "weight": 700,
+      "size": null,
+      "sourceType": null,
+      "_note": "Releases GitHub sans assets attaches (verifie : 5 dernieres releases toutes vides) -> la version est resolue via le tag GitHub (page HTML, pas l'API) mais le telechargement reel vient TOUJOURS de memtest.org (source canonique, jamais MajorGeeks). GitHub sert uniquement de source de verite pour le numero de version."
+    }
+  }
+}
