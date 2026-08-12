@@ -9,24 +9,9 @@
       "fileName": "Techfixer2608.7z",
       "mirror1": "https://kdrive.infomaniak.com/app/share/253365/9ceaa1f1-9f4a-45e2-89c4-cdd2c780a2bf",
       "mirror2": "https://archive.org/download/techfixer-2608.7z/Techfixer2608.7z",
-      "hash": null,
+      "hash": "de640f50cbe69bcfa69d099918814e16c64d78e2987120b61293fc41fd51e30a",
       "size": 12166524017,
-      "_note": "size releve le 2026-08-11 depuis l'API kDrive (12 166 524 017 octets = 11,3 Go), pas une estimation. MIROIR 1 = lien de PARTAGE kDrive (pas l'URL directe) : KDriveResolver le resout dynamiquement via /init -> file_id -> /files/{id}/download, donc un re-upload d'une nouvelle version continue de marcher sans toucher a ce fichier. MIROIR 2 = Archive.org, URL directe verifiee le 2026-08-11 : 200, taille identique au bit pres, Content-Type 7z, Accept-Ranges: bytes et reponse 206 sur requete Range (reprise donc supportee, indispensable sur 11,3 Go). Aucun resolveur specifique n'est necessaire, HttpFileDownloader la consomme telle quelle. hash TOUJOURS a renseigner (SHA-256) : sans lui, seul l'auto-test 7-Zip protege — il detecte un transfert abime mais pas une archive valide qui ne serait pas la bonne."
-    }
-  }
-}{
-  "schema": "ofbridge.techfixer.mirrors/1",
-  "updated": "2026-08-11",
-  "_note": "Systeme de miroirs (cf. prompt initial, section \"Systeme de miroirs\"). Interroge a la demande (preparation de cle), pas a chaque lancement -- meme mecanique de repli que manifest.json (Manifest/ManifestFetcher.cs) : distant -> derniere copie recuperee avec succes -> copie seed embarquee. Hebergement prevu : raw.githubusercontent.com, repo ofbridge-lab/TechFixer-Installer (confirme par Ludo le 2026-08-11).",
-  "items": {
-    "techfixer-key-snapshot": {
-      "label": "TechFixer — snapshot complet de clé",
-      "version": "2608",
-      "mirror1": "https://kdrive.infomaniak.com/app/share/253365/9ceaa1f1-9f4a-45e2-89c4-cdd2c780a2bf",
-      "mirror2": null,
-      "hash": null,
-      "size": null,
-      "_note": "Mirror 2 (Archive.org, https://archive.org/details/techfixer-2608.7z) en cours d'upload par Ludo au 2026-08-11 -- laisse a null tant que l'upload n'est pas termine et l'URL confirmee stable (comportement voulu par le prompt initial : grise/desactive dans l'UI tant que null). Le lien kDrive de mirror1 est un lien de partage : a re-interroger dynamiquement si Infomaniak le fait expirer/changer."
+      "_note": "size releve le 2026-08-11 depuis l'API kDrive (12 166 524 017 octets = 11,3 Go), pas une estimation. MIROIR 1 = lien de PARTAGE kDrive (pas l'URL directe) : KDriveResolver le resout dynamiquement via /init -> file_id -> /files/{id}/download, donc un re-upload d'une nouvelle version continue de marcher sans toucher a ce fichier. MIROIR 2 = Archive.org, URL directe verifiee le 2026-08-11 : 200, taille identique au bit pres, Content-Type 7z, Accept-Ranges: bytes et reponse 206 sur requete Range (reprise donc supportee, indispensable sur 11,3 Go). Aucun resolveur specifique n'est necessaire, HttpFileDownloader la consomme telle quelle. HASH : SHA-256 calcule le 2026-08-11 sur une archive prealablement validee par 7zr ('Everything is Ok'), puis contre-verifie avec deux implementations independantes (sha256sum et Get-FileHash) qui concordent. C'est desormais la protection principale : MirrorDownloader compare ce hash apres chaque telechargement et SUPPRIME le fichier en cas d'ecart. A RECALCULER imperativement si le snapshot est remplace par une nouvelle version (sinon tout telechargement sera rejete a tort)."
     }
   }
 }
