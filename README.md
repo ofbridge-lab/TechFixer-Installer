@@ -34,11 +34,11 @@ Mise à jour sans reformatage — relance l'installeur sur une clé déjà prép
 Journal de bord détaillé — chaque opération de déploiement (formatage, fichiers copiés, vérifications) est tracée et consultable directement dans l'application.
 Captures d'écran
 	
-<img width="647" height="677" alt="05-ecran-principal-initial" src="https://github.com/user-attachments/assets/42571984-35f5-4123-92f7-9a84a44d0f2c" /><img width="624" height="665" alt="15-confirmation-formatage" src="https://github.com/user-attachments/assets/c4c17f59-b4a2-415f-9656-c498219abb8f" />
+<img width="200" height="209" alt="05-ecran-principal-initial" src="https://github.com/user-attachments/assets/42571984-35f5-4123-92f7-9a84a44d0f2c" /><img width="200" height="209" alt="15-confirmation-formatage" src="https://github.com/user-attachments/assets/c4c17f59-b4a2-415f-9656-c498219abb8f" />
 
 
 Écran principal — archive vérifiée, prêt à installer	Sélection de l'ISO Windows via Fido
-<img width="654" height="674" alt="04-telechargement-outils" src="https://github.com/user-attachments/assets/88295182-8058-42d5-85dd-91e3faf6f4bf" />	<img width="1217" height="644" alt="20-journal-de-bord" src="https://github.com/user-attachments/assets/67009548-2654-4e3f-bc4f-ee1319c51e72" />
+<img width="200" height="209" alt="04-telechargement-outils" src="https://github.com/user-attachments/assets/88295182-8058-42d5-85dd-91e3faf6f4bf" />	<img width="395" height="209" alt="20-journal-de-bord" src="https://github.com/user-attachments/assets/67009548-2654-4e3f-bc4f-ee1319c51e72" />
 
 
 ➡️ Le tutoriel d'installation complet détaille chaque étape avec toutes les captures.
