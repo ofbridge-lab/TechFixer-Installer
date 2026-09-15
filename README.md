@@ -1,5 +1,6 @@
 <div align="center">
- <img width="100" height="100" alt="logo" src="https://github.com/user-attachments/assets/3145967d-30eb-4515-97c0-cd5f7ba11c79" />
+ <img width="150" height="150" alt="logo" src="https://github.com/user-attachments/assets/3145967d-30eb-4515-97c0-cd5f7ba11c79" />
+	
 TechFixer Installer
 </div>
 
