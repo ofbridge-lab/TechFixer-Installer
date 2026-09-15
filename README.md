@@ -1,5 +1,7 @@
 <div align="center">
-🛡️ TechFixer Installer
+ <img width="968" height="969" alt="logo" src="https://github.com/user-attachments/assets/3145967d-30eb-4515-97c0-cd5f7ba11c79" />
+TechFixer Installer
+</div>
 
 Prépare une clé USB de dépannage TechFixer complète en quelques clics : Ventoy, suite TechFixer, ISO Windows officiel — tout automatisé.
 
@@ -7,8 +9,8 @@ Version Plateforme .NET Licence
 
 Un outil Ofbridge Lab
 
-</div>
 Sommaire
+
 À propos
 Fonctionnalités
 Captures d'écran
