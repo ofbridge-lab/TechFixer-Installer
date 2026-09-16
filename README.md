@@ -26,10 +26,14 @@ TechFixer Installer est l'outil qui automatise la fabrication d'une clé USB de 
 Il remplace la procédure manuelle historique (voir l'ancien tutoriel https://ofbridgelab.blogspot.com/2024/06/tutoriel-dinstallation-techfixer.html) par un processus guidé, fiable et reproductible, pensé pour les techniciens qui préparent régulièrement des clés de dépannage.
 
 **Fonctionnalités**
-Gestion automatique des dépendances — détecte et installe Ventoy, Fido, 7-Zip (7zr), les plugins VHD Boot / WIM Boot et Memtest86+ depuis leurs sources officielles.
-Récupération de l'archive TechFixer — téléchargement via miroirs (bascule automatique en cas d'indisponibilité) avec vérification d'intégrité de la version récupérée.
-ISO Windows officiels (optionnel) — intégration Fido pour récupérer un ISO directement depuis les serveurs Microsoft (version, révision, édition, langue), avec possibilité d'en embarquer plusieurs sur la même clé.
-Déploiement en un clic — formatage Ventoy (MBR/NTFS, Secure Boot) puis extraction de la suite TechFixer sur la clé, avec confirmation avant toute opération destructive.
+Gestion automatique des dépendances 
+— détecte et installe Ventoy, Fido, 7-Zip (7zr), les plugins VHD Boot / WIM Boot et Memtest86+ depuis leurs sources officielles.
+Récupération de l'archive TechFixer 
+— téléchargement via miroirs (bascule automatique en cas d'indisponibilité) avec vérification d'intégrité de la version récupérée.
+ISO Windows officiels (optionnel) 
+— intégration Fido pour récupérer un ISO directement depuis les serveurs Microsoft (version, révision, édition, langue), avec possibilité d'en embarquer plusieurs sur la même clé.
+Déploiement en un clic 
+— formatage Ventoy (MBR/NTFS, Secure Boot) puis extraction de la suite TechFixer sur la clé, avec confirmation avant toute opération destructive.
 Mise à jour sans reformatage — relance l'installeur sur une clé déjà préparée pour ne copier que ce qui a changé (nouvel ISO, nouvelle version de l'archive…).
 Journal de bord détaillé — chaque opération de déploiement (formatage, fichiers copiés, vérifications) est tracée et consultable directement dans l'application.
 Captures d'écran
