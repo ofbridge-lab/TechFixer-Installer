@@ -2,7 +2,7 @@
  <img width="150" height="150" alt="logo" src="https://github.com/user-attachments/assets/3145967d-30eb-4515-97c0-cd5f7ba11c79" />
 
 	
-**TechFixer Installer**
+# **TechFixer Installer**
 </div>
 
 Prépare une clé USB de dépannage TechFixer complète en quelques clics : Ventoy, suite TechFixer, ISO Windows officiel — tout automatisé.
